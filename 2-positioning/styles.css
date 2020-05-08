@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    border: 1px solid green;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    border: 1px solid blue;
+    width: 200px;
+}
+
+section {
+    position: static;
+    border: 1px solid red;
+    margin-left: 200px;
+}
+
+footer {
+    position: fixed;
+    border: 1px solid orange;
+    width: 100%;
+}
