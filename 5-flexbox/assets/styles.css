@@ -13,7 +13,6 @@ body {
 }
 
 footer {
-    align-content: center;
     background-color: #b5076b;
     display: flex;
     height: 100px;
@@ -59,7 +58,6 @@ p {
 }
 
 .super-header {
-    align-items: center;
     background-color: #45046a;
     display: flex;
     justify-content: center;
@@ -67,8 +65,8 @@ p {
 
 .super-header :only-child {
     color: white;
-    font-size: 100px;
     font-family: 'Comic Neue', cursive;
+    font-size: 100px;
 }
 
 .superhero-image {
