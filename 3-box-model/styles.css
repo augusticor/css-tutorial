@@ -5,9 +5,9 @@ body {
 
 .content {
     border: 1px solid red;
-    margin-left: 200px;
+    margin-left: 203px;
     position: static;
-}
+}   
 
 .footer {
     border: 1px solid orange;
@@ -16,16 +16,19 @@ body {
 }
 
 .header {
-    background-color: black;
+    background-color: lightskyblue;
     border: 1px solid green;
     color: white;
     position: sticky;
 }
 
+.list {
+    width: 100%;
+}
+
 .navig {
     border: 1px solid blue;
-    bottom: 250px;
     position: absolute;
-    top: 100px;
-    width: 200px;
-}
+    padding-left: 49px;
+    padding-right: 49px;
+}   
