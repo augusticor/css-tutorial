@@ -1,0 +1,183 @@
+/*Mobile design*/
+.articles {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 40px;
+}
+
+.articles .animal {
+    background-size: cover;
+    display: flex;
+    height: 220px;
+    margin-bottom: 40px;
+}
+
+.articles .animal h3 {
+    align-self: flex-end;
+    background-color: rgba(88, 88, 88, 0.281);
+    font-size: 25px;
+    font-weight: 10;
+    margin: 0;
+    width: 100%;
+}
+
+.articles article:first-child {
+    background-image: url("assets/alpaca.jpg");
+}
+
+.articles :nth-child(2) {
+    background-image: url("assets/lioness.jpg");
+}
+
+.articles :nth-child(3) {
+    background-image: url("assets/giraffe.jpg");
+}
+
+.articles :nth-child(4) {
+    background-image: url("assets/cat.jpg");
+}
+
+.articles :nth-child(5) {
+    background-image: url("assets/squirrel.jpg");
+}
+
+.articles :nth-child(6) {
+    background-image: url("assets/dog.jpg");
+    background-position: center center;
+}
+
+.articles :nth-child(7) {
+    background-image: url("assets/girl-with-dog.jpg");
+}
+
+.articles :nth-child(8) {
+    background-image: url("assets/monkey.jpg");
+}
+
+.articles :nth-child(9) {
+    background-image: url("assets/cat-programming.jpg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header section:first-child {
+    align-items: center;
+    background-color: #927811;
+    display: flex;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.header section:first-child h1 {
+    color: white;
+    margin-left: 20px;
+}
+
+.header section:first-child img {
+    height: 30px;
+    width: 30px;
+}
+
+.header section:nth-child(2) {
+    background: url("assets/main-picture.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-family: Calibri;
+    height: 300px;
+    text-align: justify;
+}
+
+.header section:nth-child(2) h2 {
+    font-size: 50px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.header section:nth-child(2) p {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+/*Tablet Design*/
+@media screen and (min-width: 600px) {
+    .articles {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .articles .animal {
+        height: 300px;
+        margin-bottom: 40px;
+        width: 350px;
+    }
+
+    .articles .animal h3 {
+        font-size: 35px;
+    }
+
+    .header section:first-child {
+        height: 80px;
+    }
+
+    .header section:first-child h1 {
+        font-size: 60px;
+    }
+
+    .header section:first-child img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .header section:nth-child(2) {
+        height: 550px;
+    }
+
+    .header section:nth-child(2) h2 {
+        font-size: 150px;
+        padding-left: 90px;
+        padding-top: 40px;
+    }
+    
+    .header section:nth-child(2) p {
+        font-size: 42px;
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+}
+
+/*Tablet Design*/
+@media screen and (min-width: 1000px) {
+    .articles {
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .articles .animal {
+        height: 350px;
+        width: 400px;
+    }
+
+    .header section:nth-child(2) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header section:nth-child(2) h2 {
+        padding: 0;
+    }
+    
+    .header section:nth-child(2) p {
+        font-size: 25px;
+        padding-left: 110px;
+        padding-right: 0px;
+    }
+}
