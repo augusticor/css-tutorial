@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+    background-color: #5c2a9d;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+}
+
+footer {
+    background-color: #b5076b;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.footer {
+    font-size: 40px;
+}
+
+.hero {
+    background-color: white;
+    border: 6px solid black;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    width: 400px;
+}
+
+.heroe-button {
+    background-color: #f1ebbb;
+    color: blueviolet;
+    font-size: 20px;
+    height: 50px;
+    margin: 20px 0px 30px 0px;
+    width: 100px;
+}
+
+.heroe-button:hover {
+    background-color: blueviolet;
+    color: #f1ebbb;
+}
+
+.hero-name {
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Segoe UI';
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.super-header {
+    background-color: #45046a;
+    display: flex;
+    justify-content: center;
+}
+
+.super-header :only-child {
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    font-size: 100px;
+}
+
+.superhero-image {
+    align-self: center;
+    height: 180px;
+    width: 200px;
+}
+
+.super-wrapper {
+    align-items: baseline;
+    background-color: #5c2a9d;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
