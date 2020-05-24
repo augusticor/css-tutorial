@@ -12,7 +12,13 @@
     margin-bottom: 35px;
 }
 
-.articles .animal h3 {
+.articles .animal .animal-img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.articles .animal .animal-title {
     background-color: rgba(88, 88, 88, 0.281);
     font-size: 25px;
     font-weight: 10;
@@ -21,18 +27,12 @@
     width: 100%;
 }
 
-.articles .animal .animal-img {
-    display: block;
-    height: auto;
-    width: 100%;
-}
-
 body {
     margin: 0;
     padding: 0;
 }
 
-.header section:first-child {
+.header .title-section:first-child {
     align-items: center;
     background-color: #927811;
     display: flex;
@@ -40,17 +40,17 @@ body {
     padding-left: 10px;
 }
 
-.header section:first-child h1 {
+.header .title-section:first-child .page-title {
     color: white;
     margin-left: 20px;
 }
 
-.header section:first-child img {
+.header .title-section:first-child .title-img {
     height: 30px;
     width: 30px;
 }
 
-.header section:nth-child(2) {
+.header .welcome-and-img-section:nth-child(2) {
     background: url("assets/main-picture.jpg");
     background-position: center center;
     background-size: cover;
@@ -60,18 +60,18 @@ body {
     text-align: justify;
 }
 
-.header section:nth-child(2) h2 {
+.header .welcome-and-img-section:nth-child(2) .site-desc {
+    font-size: 20px;
+}
+
+.header .welcome-and-img-section:nth-child(2) .welcome-msg {
     font-size: 50px;
     margin: 0;
 }   
 
-.header section:nth-child(2) h2, .header section:nth-child(2) p {
+.header .welcome-and-img-section:nth-child(2) .welcome-msg, .header .welcome-and-img-section:nth-child(2) .site-desc {
     padding-left: 30px;
     padding-right: 40px;
-}
-
-.header section:nth-child(2) p {
-    font-size: 20px;
 }
 
 /*Tablet Design*/
@@ -87,38 +87,38 @@ body {
         width: 400px;
     }
 
-    .articles .animal h3 {
+    .articles .animal .animal-title {
         font-size: 35px;
         position: relative;
     }
 
-    .header section:first-child {
+    .header .title-section:first-child {
         height: 80px;
     }
 
-    .header section:first-child h1 {
+    .header .title-section:first-child .page-title {
         font-size: 40px;
     }
 
-    .header section:first-child img {
+    .header .title-section:first-child .title-img {
         height: 40px;
         width: 40px;
     }
 
-    .header section:nth-child(2) {
+    .header .welcome-and-img-section:nth-child(2) {
         height: 550px;
     }
 
-    .header section:nth-child(2) h2 {
-        font-size: 100px;
-        padding-left: 50px;
-        padding-top: 5px;
-    }
-    
-    .header section:nth-child(2) p {
+    .header .welcome-and-img-section:nth-child(2) .site-desc {
         font-size: 35px;
         padding-left: 50px;
         padding-right: 60px;
+    }
+
+    .header .welcome-and-img-section:nth-child(2) .welcome-msg {
+        font-size: 100px;
+        padding-left: 50px;
+        padding-top: 5px;
     }
 }
 
@@ -128,18 +128,18 @@ body {
         width: 427px;
     }
 
-    .header section:nth-child(2) {
+    .header .welcome-and-img-section:nth-child(2) {
         align-items: center;
         display: flex;
         justify-content: center;
     }
 
-    .header section:nth-child(2) h2 {
-        padding: 0 0 0 50px;
-    }
-    
-    .header section:nth-child(2) p {
+    .header .welcome-and-img-section:nth-child(2) .site-desc {
         font-size: 45px;
-        padding: 0px 40px 0px 50px;
+        padding: 0 40px 0 50px;
+    }
+
+    .header .welcome-and-img-section:nth-child(2) .welcome-msg {
+        padding: 0 0 0 50px;
     }
 }
