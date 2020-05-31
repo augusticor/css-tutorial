@@ -1,29 +1,30 @@
 /*Mobile design*/
+
 .articles {
     display: flex;
     flex-flow: column wrap;
     margin-top: 40px;
 }
 
-.articles .animal {
+.animal {
     display: flex;
     flex-direction: column-reverse;
     height: auto;
     margin-bottom: 35px;
 }
 
-.articles .animal .animal-img {
+.animal-img {
     display: block;
     height: auto;
     width: 100%;
 }
 
-.articles .animal .animal-title {
+.animal-title {
     background-color: rgba(88, 88, 88, 0.281);
     font-size: 25px;
     font-weight: 10;
-    position: absolute;
     margin: 0;
+    position: absolute;
     width: 100%;
 }
 
@@ -32,7 +33,21 @@ body {
     padding: 0;
 }
 
-.header .title-section:first-child {
+.page-title {
+    color: white;
+    margin-left: 20px;
+}
+
+.site-desc {
+    font-size: 20px;
+}
+
+.title-img {
+    height: 30px;
+    width: 30px;
+}
+
+.title-section {
     align-items: center;
     background-color: #927811;
     display: flex;
@@ -40,17 +55,7 @@ body {
     padding-left: 10px;
 }
 
-.header .title-section:first-child .page-title {
-    color: white;
-    margin-left: 20px;
-}
-
-.header .title-section:first-child .title-img {
-    height: 30px;
-    width: 30px;
-}
-
-.header .welcome-and-img-section:nth-child(2) {
+.welcome-and-img-section {
     background: url("assets/main-picture.jpg");
     background-position: center center;
     background-size: cover;
@@ -60,86 +65,70 @@ body {
     text-align: justify;
 }
 
-.header .welcome-and-img-section:nth-child(2) .site-desc {
-    font-size: 20px;
-}
-
-.header .welcome-and-img-section:nth-child(2) .welcome-msg {
+.welcome-msg {
     font-size: 50px;
     margin: 0;
-}   
+}
 
-.header .welcome-and-img-section:nth-child(2) .welcome-msg, .header .welcome-and-img-section:nth-child(2) .site-desc {
-    padding-left: 30px;
-    padding-right: 40px;
+.welcome-msg, .site-desc {
+    padding: 0 40px 0 30px;
 }
 
 /*Tablet Design*/
+
 @media screen and (min-width: 600px) {
     .articles {
         flex-flow: row wrap;
         justify-content: space-around;
     }
-
-    .articles .animal {
+    .animal {
         align-self: center;
         margin-bottom: 40px;
         width: 400px;
     }
-
-    .articles .animal .animal-title {
+    .animal-title {
         font-size: 35px;
         position: relative;
     }
-
-    .header .title-section:first-child {
-        height: 80px;
-    }
-
-    .header .title-section:first-child .page-title {
+    .page-title {
         font-size: 40px;
     }
-
-    .header .title-section:first-child .title-img {
+    .site-desc {
+        font-size: 35px;
+        padding: 0 60px 0 50px;
+    }
+    .title-img {
         height: 40px;
         width: 40px;
     }
-
-    .header .welcome-and-img-section:nth-child(2) {
+    .title-section {
+        height: 80px;
+    }
+    .welcome-and-img-section {
         height: 550px;
     }
-
-    .header .welcome-and-img-section:nth-child(2) .site-desc {
-        font-size: 35px;
-        padding-left: 50px;
-        padding-right: 60px;
-    }
-
-    .header .welcome-and-img-section:nth-child(2) .welcome-msg {
+    .welcome-msg {
         font-size: 100px;
-        padding-left: 50px;
-        padding-top: 5px;
+        padding: 0 5px 0 50px;
     }
 }
 
 /*Desktop Design*/
+
 @media screen and (min-width: 1024px) {
-    .articles .animal {
+    .animal {
         width: 427px;
     }
-
-    .header .welcome-and-img-section:nth-child(2) {
+    .site-desc {
+        font-size: 45px;
+        padding: 0 40px 0 50px;
+    }
+    .welcome-and-img-section {
         align-items: center;
         display: flex;
         justify-content: center;
     }
-
-    .header .welcome-and-img-section:nth-child(2) .site-desc {
-        font-size: 45px;
-        padding: 0 40px 0 50px;
-    }
-
-    .header .welcome-and-img-section:nth-child(2) .welcome-msg {
+    .welcome-msg {
         padding: 0 0 0 50px;
     }
 }
